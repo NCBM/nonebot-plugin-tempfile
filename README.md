@@ -13,9 +13,6 @@ _✨ 适用于 NoneBot2 插件的临时文件/IO 依赖注入支持 ✨_
 <a href="https://pypi.python.org/pypi/nonebot-plugin-tempfile">
     <img src="https://img.shields.io/pypi/v/nonebot-plugin-tempfile.svg" alt="pypi">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-tempfile">
-    <img src="https://img.shields.io/pypi/v/nonebot-plugin-tempfile.svg" alt="pypi">
-</a>
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
 
 </div>
