@@ -1,0 +1,15 @@
+[project]
+name = "nonebot-plugin-tempfile"
+version = "0.1.0"
+description = "适用于 NoneBot2 插件的临时文件/IO 依赖注入支持"
+authors = [
+    {name = "HivertMoZara", email = "worldmozara@163.com"},
+]
+license = {text = "MIT"}
+dependencies = ["nonebot2>=2.0.0"]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/NCBM/nonebot-plugin-tempfile"
+Repository = "https://github.com/NCBM/nonebot-plugin-tempfile"
