@@ -1,14 +1,15 @@
+import os
 from functools import wraps
 from io import BytesIO, StringIO
-import os
 from pathlib import Path
-from tempfile import TemporaryDirectory as _TemporaryDirectory, mkstemp
+from tempfile import TemporaryDirectory as _TemporaryDirectory
+from tempfile import mkstemp
 from typing import Callable, Generator, Optional, TypeVar
-from typing_extensions import Annotated, ParamSpec
 
-from nonebot import get_driver, logger
+from nonebot import get_plugin_config, logger
 from nonebot.params import Depends
 from nonebot.plugin import PluginMetadata
+from typing_extensions import Annotated, ParamSpec
 
 from .config import Config
 
@@ -21,7 +22,7 @@ __plugin_meta__ = PluginMetadata(
     Config
 )
 
-_config = Config.parse_obj(get_driver().config)
+_config = get_plugin_config(Config)
 
 _T = TypeVar("_T")
 _P = ParamSpec("_P")
